@@ -188,3 +188,52 @@ footer input[type="text"], footer input[type="Email"], footer textarea{
     border: none;
 
 }
+@media screen and (max-width: 576px){
+    .skills-container, 
+    .resume-container,
+    .banner, 
+    footer,
+    nav,
+    nav > ul,
+    .about-items{
+        flex-direction: column;
+    }
+
+    nav > ul{
+        gap: 20px;
+    }
+
+    .btn-primary{
+        margin-bottom: 20px;
+    }
+    .banner{
+        margin: 20px;
+    }
+
+    .banner-profile{
+        width: 100%;
+    }
+    .header{
+        background-image: none;
+    }
+
+    footer, .about{
+       padding: 20px; 
+    }
+    .footer-column{
+        width: 100%;
+    }
+
+    footer input[type="text"], 
+    footer input[type="Email"], 
+    footer textarea {
+        width: calc(100% - 40px);
+    }
+}
+
+/*tablet specific media qurey*/
+@media screen and (min-width: 576px) and (max-width: 990px){
+    .banner{
+        flex-direction: column;
+    }
+}
